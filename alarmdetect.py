@@ -27,7 +27,7 @@ frequencyoutput=True
 
 
 #Set up audio sampler - 
-NUM_SAMPLES = 2048
+NUM_SAMPLES = 4096
 SAMPLING_RATE = 44100
 pa = pyaudio.PyAudio()
 _stream = pa.open(format=pyaudio.paInt16,
@@ -91,5 +91,3 @@ while True:
                     print "Cleared alarm!"
                     alarm=False
     sleep(0.01)
-
-
